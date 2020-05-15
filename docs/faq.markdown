@@ -14,10 +14,10 @@ A1T sessions are timeboxed to a 1 or 2-day engagement. They are intended to focu
 No, A1T sessions are not free professional services and should never be referred to as such. A1T workshops are conducted in lab environments by F5 Solutions Engineers and Solutions Architects. They are not bonded to work in production environments. A1T workshops are a free, pre-sales engagement to help F5 customers see the path to shorten their digital transformation or lift and shift migrations. A1T sessions are often an excellent springboard for future automation engagements with F5 professional services.
 
 ## How do I set up an A1T Pre-workshop meeting with my customer?
-The best method is to send an email to your regional Cloud Architect and Solutions Engineering Manager with information on:
- - why A1T is the right solutions for the customer
- - what the potential business-impacting task might be
+The best method is to email your regional Cloud Architect and Solutions Engineering Manager with information on:
+ * why A1T is the right solutions for the customer
+ * what the potential business-impacting task might be
 
 ## How much do A1T workshops cost?
-A1T sessions are free. However, resources to conduct A1T workshops are limited, so the Solutions Engineering Manager should be involved in the decision to nominate accounts as potential candidates. Ideally, we will be able to increase the number of automation subject matter experts in the field. This increase will allow us to increase the number of workshops that can be held each month.
+A1T sessions are free. However, resources to conduct A1T workshops are limited, so the Solutions Engineering Manager should be involved in the decision to nominate accounts as potential candidates. Ideally, we will be able to increase the number of automation subject experts in the field. This increase will allow us to increase the number of workshops that can be held each month.
 
