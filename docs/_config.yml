@@ -21,7 +21,7 @@
 title: Automate One Thing
 description: >- # this means to ignore newlines until "baseurl:"
   Automate One Thing (A1T) is a program to help F5 customers "get off the bench and into the 
-  race" when it comes to automation. This repository contains exmaples, training material, 
+  race" when it comes to automation. This repository contains examples, training material, 
   and workshop content.
 baseurl: "/automate-one-thing" # the subpath of your site, e.g. /blog
 url: "https://f5solutionsengineering.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
