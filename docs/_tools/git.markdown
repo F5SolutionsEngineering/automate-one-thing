@@ -7,7 +7,7 @@ link: https://git-scm.com/
 ---
 {{ page.description }}
 
-In the A1T workshops, we try to use the customer's Git repository of choice.  If they do not have a Git solution then we fallback to a GitHub.com repository.  For the most part, the work we do in the workshop leverages standard Git featurs so any hosted Git solution will work. 
+In the A1T workshops, we try to use the customer's Git repository of choice.  If they do not have a Git solution then we fallback to a GitHub.com repository.  For the most part, the work we do in the workshop leverages standard Git features so any hosted Git solution will work. 
 
 
 [{{ page.link }}]({{ page.link }})
