@@ -3,7 +3,7 @@ layout: page
 title: Ansible
 description: "Ansible is an IT automation tool. It can configure systems, deploy software, and orchestrate more advanced IT tasks such as continuous deployments or zero downtime rolling updates."
 
-link: ansible.com
+link: https://ansible.com
 ---
 {{ page.description }}
 
