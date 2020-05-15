@@ -4,7 +4,7 @@ on: [push]
 
 # Define a job named `build-and-publish` in your workflow.
 jobs:
-  build-and-publish:
+  build:
     runs-on: ubuntu-latest # This job uses a GitHub-hosted runner.
 
     steps:
@@ -14,7 +14,9 @@ jobs:
       # Invoke this action against the newly checked out source code.
       - uses: fabacab/jekyll-builder-for-github-pages-action@master
         with:
-          pre_build_commands: gem install html-proofer
+          pre_build_commands: |
+            cd docs 
+            gem install html-proofer
           post_build_commands: bundle exec htmlproofer ./_site --disable-external
 # jobs:
 #   build:
