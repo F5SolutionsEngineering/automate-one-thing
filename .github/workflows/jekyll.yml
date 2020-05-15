@@ -2,23 +2,37 @@ name: Jekyll
 # This workflow is triggered on pushes to the repository.
 on: [push]
 
+# Define a job named `build-and-publish` in your workflow.
 jobs:
-  build:
-    name: Jekyll
-    # This job runs on Linux
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: [3.8]
+  build-and-publish:
+    runs-on: ubuntu-latest # This job uses a GitHub-hosted runner.
 
     steps:
+      # Checkout the source from the `jekyll` branch.
       - uses: actions/checkout@v2
-      - uses: actions/setup-ruby@v1
+
+      # Invoke this action against the newly checked out source code.
+      - uses: fabacab/jekyll-builder-for-github-pages-action@master
         with:
-          ruby-version: "2.6"
-      - name: install prerequists
-        run: gem install bundler jekyll html-proofer
-      - name: set site
-        run: |
-          bundle exec jekyll build
-          bundle exec htmlproofer ./_site --disable-external
+          pre_build_commands: gem install html-proofer
+          post_build_commands: bundle exec htmlproofer ./_site --disable-external
+# jobs:
+#   build:
+#     name: Jekyll
+#     # This job runs on Linux
+#     runs-on: ubuntu-latest
+#     strategy:
+#       matrix:
+#         python-version: [3.8]
+
+#     steps:
+#       - uses: actions/checkout@v2
+#       - uses: actions/setup-ruby@v1
+#         with:
+#           ruby-version: "2.6"
+#       - name: install prerequists
+#         run: gem install bundler jekyll html-proofer
+#       - name: test site
+#         run: |
+#           bundle exec jekyll build
+#           bundle exec htmlproofer ./_site --disable-external
