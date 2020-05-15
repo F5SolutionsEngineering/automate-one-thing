@@ -13,7 +13,7 @@ To help prepare F5 Solutions Engineers and Solutions Architects to conduct A1T w
 ##### Tags: ansible, aws, as3, waf, ssl
 The F5 Solution Sandbox provides a demo environment to get familiar with the solutions that F5 provides in security, performance, and visibility. Users can use this environment to try automation solutions, build demos and proof of concepts.
 
-### [F5-CLI]((https://f5solutionsengineering.github.io/UDF-DevOps-Base/labs/))
+### [F5-CLI]((https://f5solutionsengineering.github.io/UDF-DevOps-Base/labs/)
 ##### Tags: as3, do, f5-cli
 This lab teaches the user how to leverage the F5-CLI to both onboard and configure a BIG-IP.  Complete lab0 and lab1.
 
