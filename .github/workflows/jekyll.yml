@@ -12,12 +12,8 @@ jobs:
         - /home/runner/work/:/svr/jekyll
     steps:
       - uses: actions/checkout@v2
-        with:
-          path: /svr/jekyll/automate-one-thing
       - name: Run in container
-        run: |
-          cd /svr/jekyll/automate-one-thing/docs
-          jekyll build
+        run: jekyll build --source /__w/automate-one-thing/automate-one-thing/docs
     # This job runs on Linux
     # runs-on: ubuntu-latest
     # steps:
