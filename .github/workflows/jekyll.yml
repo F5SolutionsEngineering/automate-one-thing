@@ -5,25 +5,17 @@ on: [push]
 jobs:
   build:
     name: Jekyll
-    # This job runs on Linux
     runs-on: ubuntu-latest
-
+    container:
+      image: jekyll/builder:3.8
+      volumes:
+        - /home/runner/work/:/svr/jekyll
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-ruby@v1
-        with:
-          ruby-version: "2.6"
-      - name: install prerequists
+      - name: Run in container
         run: |
-          cd docs
-          pwd
-          ls -la
-          gem install bundler:2.1.4
-          bundle install
-
-      - name: test site
-        run: |
-          pwd
-          cd docs
-          bundle exec jekyll build
+          chown -R jekyll /__w/automate-one-thing/automate-one-thing/docs
+          cd /__w/automate-one-thing/automate-one-thing/docs
+          jekyll build
+          gem install html-proofer
           bundle exec htmlproofer ./_site --disable-external --url-ignore "/automate-one-thing/"
