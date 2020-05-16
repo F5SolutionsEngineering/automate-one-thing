@@ -2,39 +2,23 @@ name: Jekyll
 # This workflow is triggered on pushes to the repository.
 on: [push]
 
-# Define a job named `build-and-publish` in your workflow.
 jobs:
   build:
-    runs-on: ubuntu-latest # This job uses a GitHub-hosted runner.
+    name: Jekyll
+    # This job runs on Linux
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Build Jekyll site.
-        uses: fabacab/jekyll-builder-for-github-pages-action@master # Or whatever "@ref" you want.
-        env:
-          INPUT_JEKYLL_BUILD_OPTS: --source /home/runner/work/automate-one-thing/automate-one-thing/docs
-        # with:
-        # pre_build_commands: |
-        #   cd docs
-        #   gem install html-proofer
-        # post_build_commands: |
-        #   bundle exec htmlproofer ./_site --disable-external --url-ignore "/automate-one-thing/"
-# jobs:
-#   build:
-#     name: Jekyll
-#     # This job runs on Linux
-#     runs-on: ubuntu-latest
+      - uses: actions/checkout@v2
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: "2.6"
+      - name: install prerequists
+        run: |
+          pwd
+          bundle install
 
-#     steps:
-#       - uses: actions/checkout@v2
-#       - uses: actions/setup-ruby@v1
-#         with:
-#           ruby-version: "2.6"
-#       - name: install prerequists
-#         run: |
-#           cd docs
-#           bundle install
-
-#       - name: test site
-#         run: |
-#           bundle exec jekyll build
-#           bundle exec htmlproofer ./_site --disable-external --url-ignore "/automate-one-thing/"
+      - name: test site
+        run: |
+          bundle exec jekyll build --source ./docs
+          bundle exec htmlproofer ./_site --disable-external --url-ignore "/automate-one-thing/"
