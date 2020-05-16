@@ -7,7 +7,7 @@ jobs:
     name: Jekyll
     runs-on: ubuntu-latest
     container:
-      image: jekyll/builder:4
+      image: jekyll/builder:3.8
       volumes:
         - /home/runner/work/:/svr/jekyll
     steps:
