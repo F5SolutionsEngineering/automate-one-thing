@@ -9,10 +9,10 @@ jobs:
       image: jekyll/builder:3.8
       volumes:
         - $pwd/docs:/srv/jekyll
-      steps:
-        - name: Run in container
-          run: |
-            jekyll build
+    steps:
+      - name: Run in container
+        run: |
+          jekyll build
     # This job runs on Linux
     # runs-on: ubuntu-latest
     # steps:
