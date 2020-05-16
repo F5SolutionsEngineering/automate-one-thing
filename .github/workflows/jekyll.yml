@@ -13,7 +13,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run in container
-        run: jekyll build --source /__w/automate-one-thing/automate-one-thing/docs
+        run: |
+          pwd
+          ls -la
+          RUN chown -R jekyll /__w/automate-one-thing/automate-one-thing/docs
+          cd /__w/automate-one-thing/automate-one-thing/docs
+          pwd
+          ls -la
+          jekyll build
     # This job runs on Linux
     # runs-on: ubuntu-latest
     # steps:
