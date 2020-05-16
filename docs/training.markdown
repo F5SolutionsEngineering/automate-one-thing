@@ -17,7 +17,7 @@ The F5 Solution Sandbox provides a demo environment to get familiar with the sol
 ##### Tags: as3, do, f5-cli
 This lab teaches the user how to leverage the F5-CLI to both onboard and configure a BIG-IP.  Complete lab0 and lab1.
 
-### [Deploy a BIG-IP in AWS via Terraform](#)
+### Deploy a BIG-IP in AWS via Terraform
 ##### Tags: aws, terraform, inspec
 This lab teaches the user how to deploy a BIG-IP into AWS leveraging Terraform.
 > **NOTE:** This lab is still under development
