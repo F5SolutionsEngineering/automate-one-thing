@@ -21,3 +21,5 @@ jobs:
           pwd
           ls -la
           jekyll build
+          gem install html-proofer
+          bundle exec htmlproofer ./_site --disable-external --url-ignore "/automate-one-thing/"
