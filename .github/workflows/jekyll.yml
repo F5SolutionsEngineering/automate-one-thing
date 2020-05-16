@@ -9,11 +9,14 @@ jobs:
     container:
       image: jekyll/builder:3.8
       volumes:
-        - /home/runner/work/:/__w
+        - /home/runner/work/:/svr/jekyll
     steps:
       - uses: actions/checkout@v2
+        with:
+          path: /svr/jekyll/automate-one-thing
       - name: Run in container
         run: |
+          cd /svr/jekyll/automate-one-thing/docs
           jekyll build
     # This job runs on Linux
     # runs-on: ubuntu-latest
