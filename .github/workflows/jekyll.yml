@@ -15,7 +15,10 @@ jobs:
           ruby-version: "2.6"
       - name: install prerequists
         run: |
+          cd docs
           pwd
+          ls -la
+          bundle update --bundler
           bundle install
 
       - name: test site
