@@ -16,7 +16,7 @@ jobs:
         run: |
           pwd
           ls -la
-          RUN chown -R jekyll /__w/automate-one-thing/automate-one-thing/docs
+          chown -R jekyll /__w/automate-one-thing/automate-one-thing/docs
           cd /__w/automate-one-thing/automate-one-thing/docs
           pwd
           ls -la
