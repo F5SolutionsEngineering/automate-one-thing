@@ -25,5 +25,5 @@ jobs:
         run: |
           pwd
           cd docs
-          bundle exec jekyll build --source /home/runner/work/automate-one-thing/automate-one-thing/docs
+          bundle exec jekyll build
           bundle exec htmlproofer ./_site --disable-external --url-ignore "/automate-one-thing/"
