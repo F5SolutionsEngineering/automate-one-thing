@@ -16,7 +16,7 @@ jobs:
         with:
           pre_build_commands: |
             cd docs
-            sudo bundle install
+            gem install html-proofer
           post_build_commands: |
             bundle exec htmlproofer ./_site --disable-external --url-ignore "/automate-one-thing/"
 
