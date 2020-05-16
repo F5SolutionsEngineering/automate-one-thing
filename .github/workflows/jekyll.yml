@@ -5,6 +5,7 @@ on: [push]
 jobs:
   build:
     name: Jekyll
+    runs-on: ubuntu-latest
     container:
       image: jekyll/builder:3.8
       volumes:
