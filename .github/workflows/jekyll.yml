@@ -23,5 +23,5 @@ jobs:
 
       - name: test site
         run: |
-          bundle exec jekyll build --source ./docs
+          bundle exec jekyll build --source /home/runner/work/automate-one-thing/automate-one-thing/docs
           bundle exec htmlproofer ./_site --disable-external --url-ignore "/automate-one-thing/"
