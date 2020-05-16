@@ -13,8 +13,8 @@ jobs:
 
       # Invoke this action against the newly checked out source code.
       - uses: fabacab/jekyll-builder-for-github-pages-action@master
-        env:
-          INPUT_JEKYLL_BUILD_OPTS: --source /home/runner/work/automate-one-thing/automate-one-thing/docs
+        # env:
+        #   INPUT_JEKYLL_BUILD_OPTS: --source /home/runner/work/automate-one-thing/automate-one-thing/docs
         # with:
         # pre_build_commands: |
         #   cd docs
