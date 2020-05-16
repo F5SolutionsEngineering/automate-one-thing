@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: Build Jekyll site.
-        uses: fabacab/jekyll-builder-for-github-pages-action@v1 # Or whatever "@ref" you want.
+        uses: fabacab/jekyll-builder-for-github-pages-action@master # Or whatever "@ref" you want.
         env:
           INPUT_JEKYLL_BUILD_OPTS: --source /home/runner/work/automate-one-thing/automate-one-thing/docs
         # with:
