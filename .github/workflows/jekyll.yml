@@ -8,9 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: jekyll/builder:3.8
-      volumes:
-        - $pwd/docs:/srv/jekyll
     steps:
+      - uses: actions/checkout@v2
       - name: Run in container
         run: |
           jekyll build
