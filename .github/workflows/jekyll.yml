@@ -9,7 +9,7 @@ jobs:
     container:
       image: jekyll/builder:3.8
       volumes:
-        - /home/runner/work/:/svr/jekyll
+        - /home/runner/work/:/__w
     steps:
       - uses: actions/checkout@v2
       - name: Run in container
