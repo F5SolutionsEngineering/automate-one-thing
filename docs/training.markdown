@@ -13,9 +13,13 @@ To help prepare F5 Solutions Engineers and Solutions Architects to conduct A1T w
 ##### Tags: ansible, aws, as3, waf, ssl
 The F5 Solution Sandbox provides a demo environment to get familiar with the solutions that F5 provides in security, performance, and visibility. Users can use this environment to try automation solutions, build demos and proof of concepts.
 
-### [F5-CLI](https://f5solutionsengineering.github.io/UDF-DevOps-Base/labs/)
+### [F5-CLI](https://f5solutionsengineering.github.io//UDF-DevOps-Base/labs/lab1.html)
 ##### Tags: as3, do, f5-cli
 This lab teaches the user how to leverage the F5-CLI to both onboard and configure a BIG-IP.  Complete lab0 and lab1.
+
+### [FAST](https://f5solutionsengineering.github.io//UDF-DevOps-Base/labs/lab3.html)
+##### Tags: as3, fast
+F5 Application Services Templates (FAST) are an easy and effective way to deploy applications on the BIG-IP system using AS3. The FAST Extension provides a toolset for templating and managing AS3 Applications on BIG-IP.
 
 ### Deploy a BIG-IP in AWS via Terraform
 ##### Tags: aws, terraform, inspec
